@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jurnal Sastra Rumah Bamboe</title>
+<meta name="description" content="Koran Jurnal Sastra Rumah Bamboe — media sastra Indonesia: puisi, cerpen, esai, opini, dan agenda sastra.">
+<meta name="theme-color" content="#691212">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="offline-banner" class="offline-banner" hidden>Sedang offline — menampilkan tulisan yang tersimpan.</div>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <button id="nav-toggle" class="icon-btn" aria-label="Buka menu kategori" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <div class="masthead-date" id="masthead-date"></div>
+    <button id="install-btn" class="icon-btn install-btn" hidden aria-label="Pasang aplikasi">Pasang</button>
+  </div>
+  <h1 class="masthead-title">Jurnal Sastra Rumah Bamboe</h1>
+  <p class="masthead-tagline">merawat sunyi, menyemai kata, memberi ruang bagi karya</p>
+  <div class="masthead-rule"></div>
+</header>
+
+<nav id="category-nav" class="category-nav" aria-label="Kategori">
+  <button class="cat-chip is-active" data-label="">Beranda</button>
+  <button class="cat-chip" data-label="puisi">Puisi</button>
+  <button class="cat-chip" data-label="cerpen">Cerpen</button>
+  <button class="cat-chip" data-label="esai">Esai</button>
+  <button class="cat-chip" data-label="opini">Opini</button>
+  <button class="cat-chip" data-label="bedah puisi">Bedah Puisi</button>
+  <button class="cat-chip" data-label="Bedah buku">Bedah Buku</button>
+  <button class="cat-chip" data-label="artikel">Artikel</button>
+  <button class="cat-chip" data-label="meja editor">Meja Editor</button>
+  <button class="cat-chip" data-label="ruang sufi">Ruang Sufi</button>
+  <button class="cat-chip" data-label="event srb">Event SRB</button>
+</nav>
+
+<form id="search-form" class="search-bar" role="search">
+  <input id="search-input" type="search" placeholder="Cari puisi, cerpen, esai…" aria-label="Cari tulisan">
+  <button type="submit" class="icon-btn" aria-label="Cari">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+</form>
+
+<main id="main-content">
+  <section id="featured" class="featured" hidden></section>
+  <h2 id="section-heading" class="section-heading">Tulisan Terbaru</h2>
+  <section id="post-list" class="post-list" aria-live="polite"></section>
+  <div id="status-msg" class="status-msg"></div>
+  <button id="load-more" class="load-more" hidden>Muat tulisan lainnya</button>
+</main>
+
+<footer class="site-footer">
+  <p>Jurnal Sastra Rumah Bamboe — ruang literasi untuk puisi, cerpen, esai, opini, dan kritik sastra Indonesia.</p>
+  <p class="footer-links">
+    <a href="https://sastrarumahbamboe23081980.blogspot.com/p/kirim-karya.html" target="_blank" rel="noopener">Kirim Karya</a>
+    <a href="https://sastrarumahbamboe23081980.blogspot.com/p/tentang-kami.html" target="_blank" rel="noopener">Tentang Kami</a>
+    <a href="https://sastrarumahbamboe23081980.blogspot.com/p/kontak.html" target="_blank" rel="noopener">Kontak</a>
+  </p>
+  <p class="footer-copy">© <span id="year"></span> Jurnal Sastra Rumah Bamboe</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
